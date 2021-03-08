@@ -1,8 +1,17 @@
 html {
+    width: 100%;
     height: 100%
     min-height: 100%;
 }
+a, p {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    text-decoration: none; 
+    color: #222;
+}
 
+
+/*Navbar Section*/
 #navbar {
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
@@ -12,44 +21,54 @@ html {
     top: 50%;
 }
 
-a, p {
-    font-size: 13px;
-    font-family: arial,sans-serif;
-    text-decoration: none; 
-    color: #000;
-}
 #about {
     grid-area: about;
     justify-self: center;
     align-self: center;
+    color: #222;
 }
+#about:hover {text-decoration: underline;}
+
 #store {
     grid-area: store;
     justify-self: center;
     align-self: center;
+    color: #222;
 }
+#store:hover {text-decoration: underline;}
+
 #gmail {
     grid-area: gmail;
     justify-self: center;
     align-self: center;
+    color: #222;
 }
+#gmail:hover {text-decoration: underline;}
+
 #images {
     grid-area: images;
     justify-self: center;
     align-self: center;
+    color: #222;
 }
+#images:hover {text-decoration: underline;}
+
 #menu {
     grid-area: menu;
     justify-self: center;
     align-self: center;
 }
+
 #sign-in {
     grid-area: sign-in;
     justify-self: center;
     align-self: center;
+    color: #222;
 }
+#sign-in:hover {text-decoration: underline;}
 
 
+/*Main Section*/
 #main {
     display: grid;
     grid-template-columns: 340px 1fr 340px;
@@ -100,8 +119,78 @@ a, p {
     align-self: baseline;
 }
 
-
+/*Footer Section*/
 #footer {
-
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100px 100px 150px 1fr 100px 50px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "advertising business how-search-works carbon-neutral privacy terms settings";
+    background-color: #f2f2f2;
 
 }
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+    color: #70757a;
+    font-size: 14px;
+}
+#advertising:hover {text-decoration: underline;}
+
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+    color: #70757a;
+    font-size: 14px;
+}
+#business:hover {text-decoration: underline;}
+
+#how-search-works {
+    grid-area: how-search-works;
+    justify-self: center;
+    align-self: center;
+    color: #70757a;
+    font-size: 14px;
+}
+#how-search-works:hover {text-decoration: underline;}
+
+#carbon-neutral {
+    grid-area: carbon-neutral;
+    justify-self: center;
+    align-self: center;
+}
+#carbon-neutral:hover {text-decoration: underline;}
+
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+    color: #70757a;
+    font-size: 14px;
+}
+#privacy:hover {text-decoration: underline;}
+
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+    color: #70757a;
+    font-size: 14px;
+}
+#terms:hover {text-decoration: underline;}
+
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+    color: #70757a;
+    font-size: 14px;
+}
+#settings:hover {text-decoration: underline;}
+
