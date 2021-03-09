@@ -14,8 +14,8 @@ a, p {
 /*Navbar Section*/
 #navbar {
     display: grid;
-    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
-    grid-template-rows: 50px;
+    grid-template-columns: 73px 40px 1fr 50px 50px 80px 90px;
+    grid-template-rows: 44px;
     grid-template-areas: 
     "about store . gmail images menu sign-in";
     top: 50%;
@@ -34,6 +34,7 @@ a, p {
     justify-self: center;
     align-self: center;
     color: #222;
+    padding-right: 3px;
 }
 #store:hover {text-decoration: underline;}
 
@@ -42,6 +43,9 @@ a, p {
     justify-self: center;
     align-self: center;
     color: #222;
+    font-size: 13px;
+    padding-right: 13px;
+    padding-bottom: 2px;
 }
 #gmail:hover {text-decoration: underline;}
 
@@ -50,6 +54,9 @@ a, p {
     justify-self: center;
     align-self: center;
     color: #222;
+    font-size: 13px;
+    padding-right: 6px;
+    padding-bottom: 2px;
 }
 #images:hover {text-decoration: underline;}
 
@@ -57,33 +64,61 @@ a, p {
     grid-area: menu;
     justify-self: center;
     align-self: center;
+    margin-right: 20px;
+}
+#menu:hover {
+    opacity: 1;
 }
 
 #sign-in {
     grid-area: sign-in;
     justify-self: center;
     align-self: center;
-    color: #222;
+    color: #fff;
+    letter-spacing: .25px;
+
+    background: #1a73e8;
+    border: 1px solid transparent;
+    line-height: 16px;
+    margin-left: 3px;
+    margin-right: 30px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
 }
-#sign-in:hover {text-decoration: underline;}
+#sign-in:hover {
+    background: #2b7de9;
+    webkit-box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+}
 
 
 /*Main Section*/
+
 #main {
     display: grid;
     grid-template-columns: 340px 1fr 340px;
-    grid-template-rows: 120px 70px 50px 1fr;
+    grid-template-rows: 175px 70px 50px 1fr;
     grid-template-areas: 
     ". logo ."
     ". search ."
     ". flexbox ."
     ". google-text .";
 }
+
 #logo {
     grid-area: logo;
     justify-self: center;
     align-self: center;
+    margin-top: 45px;
 } 
+
 #search {
     grid-area: search;
     display: flex;
@@ -96,17 +131,20 @@ a, p {
     border-radius: 24px;
     z-index: 3;
     margin: 0 auto;
+    margin-top: 9px;
 }
 #search:hover {
     background-color: #fff;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
 }
+
 #flexbox {
     display: flexbox;
     grid-area: flexbox;
     justify-self: center;
 }
+
 #google-search-btn {
     grid-area: google-search-btn;
     border-radius: 4px;
@@ -153,27 +191,33 @@ a, p {
     grid-area: google-text;
     justify-self: center;
     align-self: baseline;
+    font-size: 13px;
+    padding-top: 5px;
 }
 
 #language {
     color: #1a0dab;
+    font-size: 13px;
 }
 #language:hover {
     text-decoration: underline;
 }
 
+
 /*Footer Section*/
+
 #footer {
     position: fixed;
     left: 0;
     bottom: 0;
     display: grid;
     width: 100%;
-    grid-template-columns: 100px 100px 150px 1fr 95px 100px 50px 100px;
-    grid-template-rows: 50px;
+    grid-template-columns: 30px 80px 95px 150px 1fr 95px 114px 30px 120px;
+    grid-template-rows: 48px;
     grid-template-areas:
-    "advertising business how-search-works carbon-neutral . privacy terms settings";
+    ". advertising business how-search-works carbon-neutral . privacy terms settings";
     background-color: #f2f2f2;
+    
 
 }
 #advertising {
@@ -191,6 +235,7 @@ a, p {
     align-self: center;
     color: #70757a;
     font-size: 14px;
+    padding-left: 10px;
 }
 #business:hover {text-decoration: underline;}
 
@@ -203,10 +248,16 @@ a, p {
 }
 #how-search-works:hover {text-decoration: underline;}
 
+#cn-img {
+    padding-right: 2px;
+    padding-top: 2px;
+}
+
 #carbon-neutral {
     grid-area: carbon-neutral;
     justify-self: center;
     align-self: center;
+    padding-left: 6px;
 }
 #carbon-neutral:hover {text-decoration: underline;}
 
